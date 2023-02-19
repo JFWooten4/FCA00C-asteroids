@@ -14,26 +14,16 @@ extern crate std;
 /// ESPECIALLY LEAVE THESE TESTS ALONE
 #[test]
 fn fca00c_fast() {
-    // Here we install and register the GameEngine contract in a default Soroban
-    // environment, and build a client that can be used to invoke the contract.
     let env = Env::default();
     let engine_id = env.register_contract_wasm(None, GameEngineWASM);
     let engine = GameEngine::new(&env, &engine_id);
 
-    // DON'T CHANGE THE FOLLOWING INIT() PARAMETERS
-    // Once you've submitted your contract on the FCA00C site, we will invoke
-    // the `init()` function of our GameEngine contract with the same values
-    // every time. These will be the *EXACT SAME VALUES* for each and every
-    // submission, from each and every player. Leaving them as-is in this test
-    // will allow you to locally simulate (as closely as possible) the results
-    // you'll see when you really submit your contract
     engine.init(
         &1,    // The number of spaces your ship will `p_move()` by default
         &3,    // The maximum distance from which your ship's laser can `p_shoot()` an asteroid
         &8891, // The map's randomness is seeded with a known, consistent `u64` value (this will produce the same map every time for everybody)
         &16,   // The size of each galaxy grid (so 16x16)
         &(
-            // Soroban functions can only have a maximum of 10 parameters, so all the fuel parameters are collected here
             50, // The amount of fuel your ship contains at initialization
             5,  // The amount of fuel consumed by the `p_shoot()` method
             2,  // The amount of fuel consumed when you `p_move()` a single space
@@ -47,7 +37,6 @@ fn fca00c_fast() {
     let solution_id = env.register_contract(None, Solution);
     let solution = SolutionClient::new(&env, &solution_id);
 
-    // We reset the budget so you have the best chance to not hit a TrapMemLimitExceeded or TrapCpuLimitExceeded error
     env.budget().reset();
 
     solution.solve(&engine_id);
@@ -64,18 +53,8 @@ pub fn fca00c_budget() {
     let engine_id = env.register_contract_wasm(None, GameEngineWASM);
     let engine = GameEngine::new(&env, &engine_id);
 
-    // DON'T CHANGE THE FOLLOWING INIT() PARAMETERS
-    // Please see note in the `fca00c_fast()` function for more details.
     engine.init(&1, &3, &8891, &16, &(50, 5, 2, 1), &1, &6, &2);
 
-    // We are running this test against your *compiled* solution contract,
-    // rather than using your source code as a crate, like in `fca00c_fast()`.
-    // The advantage here is: Your final submission will be a compiled wasm, and
-    // this test will give you a better idea of what your final budget will be.
-    // The drawback here is: Compiling your contract after each change will slow
-    // you down, and make iterating more of a slog. This probably isn't the test
-    // you want to _actively_ build against, but it is useful for fine-tuning a
-    // valid contract.
     mod solution {
         soroban_sdk::contractimport!(
             file = "../../target/wasm32-unknown-unknown/release/soroban_asteroids_solution.wasm"
@@ -85,15 +64,10 @@ pub fn fca00c_budget() {
     let solution_id = env.register_contract_wasm(None, solution::WASM);
     let solution = solution::Client::new(&env, &solution_id);
 
-    // We reset the budget here so that we *only* count the budget for your
-    // contract's `solve()` function. Everything else we've done so far is free!
     env.budget().reset();
 
     solution.solve(&engine_id);
 
-    // We are printing your contract's utilized budget, but there will be an
-    // *expected* difference between the budget numbers you see locally and on
-    // the FCA00C site. Please see above note for details.
     env.budget().print();
 
     let points = engine.p_points();
@@ -102,4 +76,68 @@ pub fn fca00c_budget() {
     assert!(points >= 100);
 }
 
-// WRITE ANY OF YOUR OWN TESTS BELOW
+#[test]
+pub fn output_entire_map() {
+    let env = Env::default();
+    let engine_id = env.register_contract_wasm(None, GameEngineWASM);
+    let engine = GameEngine::new(&env, &engine_id);
+
+    engine.init(
+        &1, &3, &8891, &16, &(
+            1, // The amount of fuel your ship contains at initialization
+            0,  // The amount of fuel consumed by the `p_shoot()` method
+            0,  // The amount of fuel consumed when you `p_move()` a single space
+            0,  // The amount of fuel consumed by the `p_turn()` method
+        ), &1, &6, &2,
+    );
+
+    
+    engine.p_turn(Left)
+    engine.p_move(16)
+    engine.p_turn(Up)
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+    engine.p_turn(Right)
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+    engine.p_turn(Left)
+    engine.p_move(16 * 3)
+    engine.p_turn(Down)
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+    engine.p_turn(Right)
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+    engine.p_turn(Left)
+    engine.p_move(16 * 3)
+    engine.p_turn(Down)
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+    engine.p_turn(Right)
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+    engine.p_move(16)
+    let mut cur_galaxy_map = enginge.get_map();
+    println!(":?", cur_galaxy_map);
+
+}
