@@ -1,18 +1,5 @@
 #![cfg(test)]
-/// THERE IS NO NEED TO EDIT THIS FILE
-/// This test file closely mimics how we will evaluate your submitted contract.
-/// You are free to write your own tests during development, but please be aware
-/// that the `test()` function below lays out some parameters and patterns
-/// you'll want to use in your test setup.
 
-/// A Note on Budget: The following `test()` function will calculate and display
-/// the cost of running your contract, in terms of CPU instructions and memory
-/// bytes. There is an *expected* difference between results seen when testing
-/// locally, and results given when submitted for evaluation on the FCA00C site.
-/// You can expect your numbers locally to be lower than your "official" cost
-/// when your contract is submitted for evaluation. However, as you optimize
-/// your contract and lower your cost locally, you can expect your "official"
-/// cost will decrease as well.
 use std::println;
 
 use soroban_sdk::Env;
