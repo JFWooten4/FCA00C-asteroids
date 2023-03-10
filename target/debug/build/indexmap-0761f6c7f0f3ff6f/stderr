@@ -1,0 +1,13 @@
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/indexmap-0761f6c7f0f3ff6f/out/probe0.probe0.b96f0410-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/indexmap-0761f6c7f0f3ff6f/out/probe0.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/indexmap-0761f6c7f0f3ff6f/out/probe1.probe1.8cc8e6c2-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/indexmap-0761f6c7f0f3ff6f/out/probe1.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+warning: autocfg could not probe for `std`
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/indexmap-0761f6c7f0f3ff6f/out/probe2.probe2.f06e4965-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/indexmap-0761f6c7f0f3ff6f/out/probe2.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+

@@ -1,0 +1,33 @@
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe0.probe0.b96f0410-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe0.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe1.probe1.8cc8e6c2-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe1.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+warning: autocfg could not probe for `std`
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe2.probe2.f06e4965-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe2.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe3.probe3.b5e07ad4-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe3.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe4.probe4.311361ed-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe4.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe5.probe5.5e1ab8ff-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe5.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe6.probe6.255734b2-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe6.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe7.probe7.c5bbe9cf-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-traits-36c027e88bdffade/out/probe7.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+

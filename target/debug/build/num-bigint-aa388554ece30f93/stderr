@@ -1,0 +1,35 @@
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-bigint-aa388554ece30f93/out/probe0.probe0.b96f0410-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-bigint-aa388554ece30f93/out/probe0.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-bigint-aa388554ece30f93/out/probe1.probe1.8cc8e6c2-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-bigint-aa388554ece30f93/out/probe1.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+warning: autocfg could not probe for `std`
+error: could not copy "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-bigint-aa388554ece30f93/out/probe2.probe2.f06e4965-cgu.0.rcgu.ll" to "/mnt/c/GitHub/fca00c-asteroids/target/debug/build/num-bigint-aa388554ece30f93/out/probe2.ll": Operation not permitted (os error 1)
+
+error: aborting due to previous error
+
+error[E0433]: failed to resolve: maybe a missing crate `core`?
+ --> <anon>:1:9
+  |
+1 | pub use core::convert::TryFrom;
+  |         ^^^^ maybe a missing crate `core`?
+  |
+  = help: consider adding `extern crate core` to use the `core` crate
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0433`.
+error[E0433]: failed to resolve: maybe a missing crate `core`?
+ --> <anon>:1:9
+  |
+1 | pub use core::arch::x86_64::_addcarry_u64;
+  |         ^^^^ maybe a missing crate `core`?
+  |
+  = help: consider adding `extern crate core` to use the `core` crate
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0433`.

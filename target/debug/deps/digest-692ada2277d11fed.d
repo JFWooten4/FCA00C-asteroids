@@ -1,0 +1,13 @@
+/mnt/c/GitHub/fca00c-asteroids/target/debug/deps/digest-692ada2277d11fed.rmeta: /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/lib.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/digest.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/dyn_digest.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/errors.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/fixed.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/variable.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/xof.rs
+
+/mnt/c/GitHub/fca00c-asteroids/target/debug/deps/libdigest-692ada2277d11fed.rlib: /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/lib.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/digest.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/dyn_digest.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/errors.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/fixed.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/variable.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/xof.rs
+
+/mnt/c/GitHub/fca00c-asteroids/target/debug/deps/digest-692ada2277d11fed.d: /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/lib.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/digest.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/dyn_digest.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/errors.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/fixed.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/variable.rs /home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/xof.rs
+
+/home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/lib.rs:
+/home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/digest.rs:
+/home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/dyn_digest.rs:
+/home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/errors.rs:
+/home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/fixed.rs:
+/home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/variable.rs:
+/home/johnf/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.9.0/src/xof.rs:
